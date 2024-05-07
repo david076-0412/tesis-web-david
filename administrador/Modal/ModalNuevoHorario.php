@@ -156,7 +156,27 @@
                                 <label>Nivel: </label><br>
                                 <select id="niveles" required name="niveles" onchange="cambiarGrados()">
                                     <option value="">SELECCIONAR...</option>
-                                    <option value="Primaria">Primaria</option>
+                                    <?php
+
+                                    $usuario = $_SESSION['usuario'];
+
+                                    if ($usuario == "adminprimaria") {
+                                    ?>
+                                        <option value="Primaria">Primaria</option>
+
+                                    <?php
+
+                                    } else if ($usuario == "adminsecundaria") {
+                                    ?>
+                                        <option value="Secundaria">Secundaria</option>
+
+
+                                    <?php
+                                    }
+
+
+                                    ?>
+
 
 
 
