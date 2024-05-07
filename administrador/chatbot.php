@@ -354,7 +354,7 @@ if (isset($_SESSION['usuario'])) {
 
 
 
-                    $sqlClienteff   = ("SELECT DISTINCT queries,replies FROM chatbot");
+                    $sqlClienteff   = ("SELECT DISTINCT id,queries,replies FROM chatbot");
                     $queryClienteff = mysqli_query($conexion, $sqlClienteff);
                     $cantidad     = mysqli_num_rows($queryClienteff);
 
