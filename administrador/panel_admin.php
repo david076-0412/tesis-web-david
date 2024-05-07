@@ -642,7 +642,7 @@ if (isset($_SESSION['usuario'])) {
 
 
                 "language": {
-                    "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+                    "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
                 },
 
 
